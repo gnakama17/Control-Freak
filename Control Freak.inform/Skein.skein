@@ -4,7 +4,80 @@
     <generator>Inform Mac Client (Inform version 1.64/6.33/6M62)</generator>
     <item nodeId="node-2026">
         <command xml:space="preserve">Control Freak</command>
-        <result xml:space="preserve"></result>
+        <result xml:space="preserve">
+
+
+The lock clicks, and the glass door painfully wretches open. This is the place. The abadoned arcade at the edge of Downtown. The musty tomb of the lost and damned technological behemoths and radical trends of 80s and 90s pop culture.  The scene of the crime, where the owner was brtually, and supposedly, murdered. At least, that's what the headlines bolded out in capital lettering that Friday morning. Little did you know you'd end up chasing a lead to disprove that claim, twenty years later. This could be it. The story of the decade. Suddenly, the pager at your side beeps restlessly. You've had it for almost two weeks now, and it's never gone off this frequently. The messages ping in a chaotic stream saying just one thing over and over... GETMEOUTOFHEREGETMEOUTOFHEREGETMEOUTOFHERE
+Control Freak
+An Interactive Fiction by Galen Nakama
+Release 1 / Serial number 170214 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Lobby
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2389"></child>
+            <child nodeId="node-2399"></child>
+        </children>
+    </item>
+    <item nodeId="node-2399">
+        <command xml:space="preserve">x key</command>
+        <result xml:space="preserve">It has no further use.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2389">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a pager
+  an arcade front door key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2391"></child>
+            <child nodeId="node-2397"></child>
+        </children>
+    </item>
+    <item nodeId="node-2397">
+        <command xml:space="preserve">x key</command>
+        <result xml:space="preserve">You see nothing special about the arcade front door key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2398"></child>
+        </children>
+    </item>
+    <item nodeId="node-2398">
+        <command xml:space="preserve">x aracde front door key</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2391">
+        <command xml:space="preserve">put down pager</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2392"></child>
+        </children>
+    </item>
+    <item nodeId="node-2392">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2393"></child>
+        </children>
+    </item>
+    <item nodeId="node-2393">
+        <command xml:space="preserve">pick up pager</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
 </Skein>
