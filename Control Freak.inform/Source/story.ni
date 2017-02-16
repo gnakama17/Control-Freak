@@ -2,8 +2,7 @@
 
 When play begins: say "The lock clicks, and the glass door painfully wretches open. This is the place. The abadoned arcade at the edge of Downtown. The musty tomb of the lost and damned technological behemoths and radical trends of 80s and 90s pop culture.  The scene of the crime, where the owner was brtually, and supposedly, murdered. At least, that's what the headlines bolded out in capital lettering that Friday morning. Little did you know you'd end up chasing a lead to disprove that claim, twenty years later. This could be it. The story of the decade.
 Suddenly, the pager at your side beeps restlessly. You've had it for almost two weeks now, and it's never gone off this frequently. The messages ping in a chaotic stream saying just one thing over and over...
-GETMEOUTOFHEREGETMEOUTOFHEREGETMEOUTOFHERE
-"
+GETMEOUTOFHEREGETMEOUTOFHEREGETMEOUTOFHERE"
 
 
 
@@ -40,7 +39,9 @@ The arcade front door key is a thing carried by the player. The description is "
 
 [Below is scenery]
 
-
+Front Desk is scenery in the Lobby. 
+Cash Register is scenery in the Lobby. 
+Couches are scenery in the Lobby. 
 
 [Above is scenery]
 
