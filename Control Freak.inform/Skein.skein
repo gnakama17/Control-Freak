@@ -17,7 +17,8 @@ It is pitch dark, and you can't see a thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2409"></child>
+        <children><child nodeId="node-2616"></child>
+            <child nodeId="node-2409"></child>
             <child nodeId="node-2408"></child>
             <child nodeId="node-2401"></child>
             <child nodeId="node-2389"></child>
@@ -386,6 +387,13 @@ Power Room
         <command xml:space="preserve">take all</command>
         <result xml:space="preserve">pager: Taken.
 arcade front door key: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2616">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

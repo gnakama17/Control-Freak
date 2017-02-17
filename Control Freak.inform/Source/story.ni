@@ -47,9 +47,22 @@ Instead of dropping the arcade front door key:
 	otherwise:
 		continue the action.
 
+[The red lever is a device in the Power Room. It is fixed in place. 
+If the red lever is switched on:
+	now the Lobby is a lit room. ]
+
 [Above are the things]
 
+[The lever is a thing in the Power Room. It is fixed in place. A lever can be activated. The lever is not activated.
 
+If the player is carrying the key:
+	say "The lever goes on.";
+	now the lever is activated.
+
+Instead of pushing lever:
+	If the lever is activated:
+		say "The room is bathed in light.";
+		now the Lobby is a lighted room. ]
 
 
 
