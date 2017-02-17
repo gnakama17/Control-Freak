@@ -5,12 +5,16 @@ Suddenly, the pager at your side beeps restlessly. You've had it for almost two 
 GETMEOUTOFHEREGETMEOUTOFHEREGETMEOUTOFHERE"
 
 
+[Thanks to JDC on a Google group blog for this]
+Rule for deciding whether all includes something: it does not. 
+
+
 
 [Below are the rooms]
 
-Lobby is a room. The description is ""
+Lobby is a dark room. The description is ""
 
-Office is a room. It is east of the Lobby. The description is "" 
+Office is a dark room. It is east of the Lobby. The description is "" 
 
 Power Room is a room. It is south of the Office. The description is "" 
 
@@ -28,8 +32,20 @@ The Main Arcade is west of the Pizzaeria. The description is ""
 
 [Below are the things]
 
-The pager is a thing carried by the player. 
-The arcade front door key is a thing carried by the player. The description is "You used it to get in to the arcade. You don't think it will have any further use, but you're not sure."
+The pager is a thing carried by the player. The description is "The thing that brought you to this wretched arcade." 
+Instead of dropping the pager:
+	if the player is in a dark room:
+		say "That's really not a good idea at all.";
+	otherwise:
+		continue the action. 
+
+
+The arcade front door key is a thing carried by the player. The description is "You used it to get in to the arcade. You don't think it will have any further use, but you should keep it close just in case."
+Instead of dropping the arcade front door key:
+	if the player is in a dark room:
+		say "That is not a good idea at all.";
+	otherwise:
+		continue the action.
 
 [Above are the things]
 
@@ -42,6 +58,7 @@ The arcade front door key is a thing carried by the player. The description is "
 Front Desk is scenery in the Lobby. 
 Cash Register is scenery in the Lobby. 
 Couches are scenery in the Lobby. 
+
 
 [Above is scenery]
 
