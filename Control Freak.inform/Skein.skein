@@ -336,13 +336,97 @@ You can see a Steel Door here.
     <item nodeId="node-2724">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can't see a thing.
+Office
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2725"></child>
+            <child nodeId="node-3004"></child>
         </children>
+    </item>
+    <item nodeId="node-3004">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Lobby
+You can see a Pizzeria Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3005"></child>
+        </children>
+    </item>
+    <item nodeId="node-3005">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Office
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3006"></child>
+        </children>
+    </item>
+    <item nodeId="node-3006">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Storage Room
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3007"></child>
+        </children>
+    </item>
+    <item nodeId="node-3007">
+        <command xml:space="preserve">take cheat codes</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3008"></child>
+        </children>
+    </item>
+    <item nodeId="node-3008">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Office
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3009"></child>
+        </children>
+    </item>
+    <item nodeId="node-3009">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Lobby
+You can see a Pizzeria Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3010"></child>
+        </children>
+    </item>
+    <item nodeId="node-3010">
+        <command xml:space="preserve">play arcade machine</command>
+        <result xml:space="preserve">You lose instantly.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3011"></child>
+        </children>
+    </item>
+    <item nodeId="node-3011">
+        <command xml:space="preserve">play with cheatcodes</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3012"></child>
+        </children>
+    </item>
+    <item nodeId="node-3012">
+        <command xml:space="preserve">play arcade machine with cheat codes</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2725">
         <command xml:space="preserve">e</command>

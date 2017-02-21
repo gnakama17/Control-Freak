@@ -11205,8 +11205,7 @@ Object -> I141_neon_strip ""
 Object -> I146_arcade_machine ""
     class K5_container
     with short_name BC_195
-    with with_key I145_cheatcodes
-    has concealed
+    with with_key I145_cheat_codes
     has ~open
     has openable
     has lockable
@@ -11540,7 +11539,7 @@ Object -> I143_lightbulb ""
     with vector 0
     has mark_as_thing
     with IK2_Count 11
-    with IK2_Link I145_cheatcodes
+    with IK2_Link I145_cheat_codes
     with KD_Count 2
     with name 'lightbulb' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
@@ -11551,7 +11550,7 @@ Object -> I143_lightbulb ""
     with article BC_289
 ;
 
-Object -> I145_cheatcodes ""
+Object -> I145_cheat_codes ""
     class K2_thing
     with short_name BC_290
     has concealed
@@ -11560,7 +11559,7 @@ Object -> I145_cheatcodes ""
     with IK2_Count 13
     with IK2_Link nothing
     with KD_Count 2
-    with name 'cheatcodes' 'things//p' 
+    with name 'cheat' 'codes' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
     with description BC_291
     with initial BC_292
@@ -12894,7 +12893,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 !   === equally specific with ===
 ! Rule 2/3 ! After playing arcade machine:
 !   === equally specific with ===
-! Rule 3/3 ! After playing with cheatcodes:
+! Rule 3/3 ! After playing with cheat codes:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! After activating lever:
@@ -12927,9 +12926,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
     rfalse;
 ];
 ! No specific request
-! After playing with cheatcodes:
+! After playing with cheat codes:
 [ R_805 ;
-    if ((((action ==##A79_playing_with) &&  (actor==player) && ((noun == I145_cheatcodes) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##A79_playing_with) &&  (actor==player) && ((noun == I145_cheat_codes) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_805, 805);
     ! [2: say ~Good job!~]
@@ -30210,7 +30209,7 @@ Array RulebookNames -->
         if (R == R_802) { print "Instead of dropping the arcade front door key"; rtrue; } ! rule 351
         if (R == R_803) { print "After activating lever"; rtrue; } ! rule 352
         if (R == R_804) { print "After playing arcade machine"; rtrue; } ! rule 353
-        if (R == R_805) { print "After playing with cheatcodes"; rtrue; } ! rule 354
+        if (R == R_805) { print "After playing with cheat codes"; rtrue; } ! rule 354
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -49548,7 +49547,7 @@ Constant TX_PS_9 = "animals";
 Constant TX_PS_36 = "arcade front door key";
 Constant TX_PS_44 = "arcade machine";
 Constant TX_PS_14 = "backdrops";
-Constant TX_PS_61 = "cheatcodes";
+Constant TX_PS_61 = "cheat codes";
 Constant TX_PS_11 = "containers";
 Constant TX_PS_15 = "devices";
 Constant TX_PS_17 = "directions";

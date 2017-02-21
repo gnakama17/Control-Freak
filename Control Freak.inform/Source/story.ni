@@ -77,9 +77,9 @@ After activating lever:
 	now Plain Lamp is lit;
 	now the Lightbulb is lit. 
 	
-The cheatcodes are an undescribed thing in the Storage Room. The cheatcodes unlock the arcade machine. 
+The cheat codes are an undescribed thing in the Storage Room. The cheat codes unlock the arcade machine. 
 
-The arcade machine is an undescribed container in the Lobby. It is locked and lockable. 
+The arcade machine is a container in the Lobby. It is locked and lockable. 
 
 
 Playing is an action applying to one thing. 
@@ -87,10 +87,11 @@ Understand "play [something]" as playing.
 After playing arcade machine:
 	say "You lose instantly."
 
+
 Playing with is an action applying to two things. 
 Understand "play [something] with [something]" as playing with. 
-After playing with cheatcodes:
-	say "Good job!"
+After playing with cheat codes:
+	say "Good job!". 
 
 
 [Above are the things]
