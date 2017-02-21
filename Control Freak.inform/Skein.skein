@@ -10,7 +10,7 @@
 The lock clicks, and the glass door painfully wretches open. This is the place. The abadoned arcade at the edge of Downtown. The musty tomb of the lost and damned technological behemoths and radical trends of 80s and 90s pop culture.  The scene of the crime, where the owner was brtually, and supposedly, murdered. At least, that's what the headlines bolded out in capital lettering that Friday morning. Little did you know you'd end up chasing a lead to disprove that claim, twenty years later. This could be it. The story of the decade. Suddenly, the pager at your side beeps restlessly. You've had it for almost two weeks now, and it's never gone off this frequently. The messages ping in a chaotic stream saying just one thing over and over... GETMEOUTOFHEREGETMEOUTOFHEREGETMEOUTOFHERE
 Control Freak
 An Interactive Fiction by Galen Nakama
-Release 1 / Serial number 170216 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Darkness
 It is pitch dark, and you can't see a thing.
@@ -22,6 +22,7 @@ It is pitch dark, and you can't see a thing.
             <child nodeId="node-2408"></child>
             <child nodeId="node-2401"></child>
             <child nodeId="node-2389"></child>
+            <child nodeId="node-2642"></child>
             <child nodeId="node-2415"></child>
             <child nodeId="node-2400"></child>
             <child nodeId="node-2399"></child>
@@ -48,7 +49,125 @@ It is pitch dark, and you can't see a thing.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2416"></child>
+            <child nodeId="node-2647"></child>
         </children>
+    </item>
+    <item nodeId="node-2647">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Pizzaeria
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2648"></child>
+        </children>
+    </item>
+    <item nodeId="node-2648">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2649"></child>
+        </children>
+    </item>
+    <item nodeId="node-2649">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2650"></child>
+            <child nodeId="node-2670"></child>
+        </children>
+    </item>
+    <item nodeId="node-2670">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Power Room
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2671"></child>
+        </children>
+    </item>
+    <item nodeId="node-2671">
+        <command xml:space="preserve">pull lever</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2672"></child>
+        </children>
+    </item>
+    <item nodeId="node-2672">
+        <command xml:space="preserve">pull</command>
+        <result xml:space="preserve">What do you want to pull?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2673"></child>
+        </children>
+    </item>
+    <item nodeId="node-2673">
+        <command xml:space="preserve">lever</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2650">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2651"></child>
+        </children>
+    </item>
+    <item nodeId="node-2651">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Power Room
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2652"></child>
+        </children>
+    </item>
+    <item nodeId="node-2652">
+        <command xml:space="preserve">x lever</command>
+        <result xml:space="preserve">You see nothing special about the red lever.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2653"></child>
+        </children>
+    </item>
+    <item nodeId="node-2653">
+        <command xml:space="preserve">activate lever</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2654"></child>
+        </children>
+    </item>
+    <item nodeId="node-2654">
+        <command xml:space="preserve">pull lever</command>
+        <result xml:space="preserve">It is fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2655"></child>
+        </children>
+    </item>
+    <item nodeId="node-2655">
+        <command xml:space="preserve">activate</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2416">
         <command xml:space="preserve">e</command>
@@ -67,7 +186,8 @@ It is pitch dark, and you can't see a thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2418"></child>
+        <children><child nodeId="node-2662"></child>
+            <child nodeId="node-2418"></child>
         </children>
     </item>
     <item nodeId="node-2418">
@@ -150,6 +270,73 @@ Power Room
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-2662">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2663"></child>
+        </children>
+    </item>
+    <item nodeId="node-2663">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Power Room
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2664"></child>
+        </children>
+    </item>
+    <item nodeId="node-2664">
+        <command xml:space="preserve">activate lever</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2665"></child>
+        </children>
+    </item>
+    <item nodeId="node-2665">
+        <command xml:space="preserve">pull lever</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2642">
+        <command xml:space="preserve">pull</command>
+        <result xml:space="preserve">What do you want to pull?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2643"></child>
+        </children>
+    </item>
+    <item nodeId="node-2643">
+        <command xml:space="preserve">lever</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2644"></child>
+        </children>
+    </item>
+    <item nodeId="node-2644">
+        <command xml:space="preserve">pull lever</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2645"></child>
+        </children>
+    </item>
+    <item nodeId="node-2645">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-2389">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying:
@@ -211,7 +398,8 @@ It is pitch dark, and you can't see a thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2402"></child>
+        <children><child nodeId="node-2657"></child>
+            <child nodeId="node-2402"></child>
         </children>
     </item>
     <item nodeId="node-2402">
@@ -326,6 +514,21 @@ Power Room
 arcade front door key: Taken.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2657">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Power Room
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2658"></child>
+        </children>
+    </item>
+    <item nodeId="node-2658">
+        <command xml:space="preserve">activate lever</command>
+        <result xml:space="preserve">&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2408">

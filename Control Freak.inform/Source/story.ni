@@ -18,11 +18,15 @@ Office is a dark room. It is east of the Lobby. The description is ""
 
 Power Room is a room. It is south of the Office. The description is "" 
 
-Hidden Laboratory is a room. It is south of the Power Room. The description is "" 
+Hidden Laboratory is a room. It is south of the Steel Door. The description is "" 
 
-Pizzaeria is a room. It is south of the Lobby. The description is ""
+Pizzeria is a room. It is south of the Pizzeria Door. The description is ""
 
 The Main Arcade is west of the Pizzaeria. The description is "" 
+
+Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. 
+
+Steel Door is a door. It is south of the Power Room and north of the Hidden Laboratory. 
 
 [Above are the rooms]
 
@@ -47,9 +51,17 @@ Instead of dropping the arcade front door key:
 	otherwise:
 		continue the action.
 
-[The red lever is a device in the Power Room. It is fixed in place. 
-If the red lever is switched on:
-	now the Lobby is a lit room. ]
+
+Activate lever is an action applying to nothing. 
+Understand "pull lever" as activate lever. 
+
+After pulling the lever, say "Good job!" 
+
+
+The red lever is an undescribed thing in the Power Room. It is fixed in place. The red lever can be pulled. It is not pulled. 
+
+
+
 
 [Above are the things]
 
@@ -63,6 +75,7 @@ Instead of pushing lever:
 	If the lever is activated:
 		say "The room is bathed in light.";
 		now the Lobby is a lighted room. ]
+
 
 
 
