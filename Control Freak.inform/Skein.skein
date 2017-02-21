@@ -54,8 +54,10 @@ It is pitch dark, and you can't see a thing.
     </item>
     <item nodeId="node-2647">
         <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Pizzaeria
+        <result xml:space="preserve">(first opening the Pizzeria Door)
+
+Pizzeria
+You can see a Pizzeria Door here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -178,7 +180,57 @@ It is pitch dark, and you can't see a thing.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2417"></child>
+            <child nodeId="node-2677"></child>
         </children>
+    </item>
+    <item nodeId="node-2677">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Power Room
+You can see a Steel Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2678"></child>
+        </children>
+    </item>
+    <item nodeId="node-2678">
+        <command xml:space="preserve">activate lever</command>
+        <result xml:space="preserve">Good job!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2724"></child>
+        </children>
+    </item>
+    <item nodeId="node-2724">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2725"></child>
+        </children>
+    </item>
+    <item nodeId="node-2725">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2726"></child>
+        </children>
+    </item>
+    <item nodeId="node-2726">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Lobby
+You can see a Pizzeria Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2417">
         <command xml:space="preserve">e</command>
@@ -520,15 +572,112 @@ arcade front door key: Taken.
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Power Room
+You can see a Steel Door here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2658"></child>
+            <child nodeId="node-2681"></child>
         </children>
+    </item>
+    <item nodeId="node-2681">
+        <command xml:space="preserve">pull lever</command>
+        <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2682"></child>
+            <child nodeId="node-2686"></child>
+            <child nodeId="node-2691"></child>
+        </children>
+    </item>
+    <item nodeId="node-2691">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2692"></child>
+        </children>
+    </item>
+    <item nodeId="node-2692">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2686">
+        <command xml:space="preserve">activating lever</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2687"></child>
+        </children>
+    </item>
+    <item nodeId="node-2687">
+        <command xml:space="preserve">pull lever</command>
+        <result xml:space="preserve">Good job!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2682">
+        <command xml:space="preserve">activate lever</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2658">
         <command xml:space="preserve">activate lever</command>
-        <result xml:space="preserve">&gt;</result>
+        <result xml:space="preserve">Good job!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2707"></child>
+        </children>
+    </item>
+    <item nodeId="node-2707">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2713"></child>
+            <child nodeId="node-2708"></child>
+        </children>
+    </item>
+    <item nodeId="node-2708">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Lobby
+You can see a Pizzeria Door and a Neon Strip (providing light) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2713">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2714"></child>
+        </children>
+    </item>
+    <item nodeId="node-2714">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2408">

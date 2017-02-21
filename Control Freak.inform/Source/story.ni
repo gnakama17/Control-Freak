@@ -24,9 +24,11 @@ Pizzeria is a room. It is south of the Pizzeria Door. The description is ""
 
 The Main Arcade is west of the Pizzaeria. The description is "" 
 
-Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. 
+Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. It is locked and lockable. 
 
-Steel Door is a door. It is south of the Power Room and north of the Hidden Laboratory. 
+Steel Door is a door. It is south of the Power Room and north of the Hidden Laboratory. It is locked and lockable. 
+
+The Storage Room is a dark room. It is east of the Office. The description is ""
 
 [Above are the rooms]
 
@@ -50,15 +52,32 @@ Instead of dropping the arcade front door key:
 		say "That is not a good idea at all.";
 	otherwise:
 		continue the action.
+		
+
+The Retro Computer is an undescribed thing in the Lobby. It is fixed in place. The description is ""
+
+The Television is an undescribed thing in the Lobby. It is fixed in place. The description is ""
+
+The Red Lockbox is an undescribed container. It is on top of the Front Desk. It is fixed in place.  
+
+The Neon Strip is an undescribed and unlit thing in the Lobby. 
+
+The Plain Lamp is an undescribed and unlit thing in the Office. 
+
+The Lightbulb is an undescribed and unlit thing in the Storage Room. 
 
 
-Activate lever is an action applying to nothing. 
-Understand "pull lever" as activate lever. 
+Activating is an action applying to one thing. 
+Understand "activate [something]" as activating. 
+After activating lever:
+	say "Good job!";
+	now the Neon Strip is lit.
+	now Plain Lamp is lit. 
+	now the Lightbulb is lit. 
+	
 
-After pulling the lever, say "Good job!" 
 
-
-The red lever is an undescribed thing in the Power Room. It is fixed in place. The red lever can be pulled. It is not pulled. 
+The lever is an undescribed thing in the Power Room. It is fixed in place. The lever can be pulled. It is not pulled. 
 
 
 
@@ -81,10 +100,15 @@ Instead of pushing lever:
 
 [Below is scenery]
 
-Front Desk is scenery in the Lobby. 
+Potted Plant is scenery in the Lobby. 
+
 Cash Register is scenery in the Lobby. 
+
 Couches are scenery in the Lobby. 
 
+Empty Pizza Box is scenery in the Lobby. 
+
+The Front Desk is scenery in the Lobby. The description is ""
 
 [Above is scenery]
 
