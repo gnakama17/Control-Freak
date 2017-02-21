@@ -67,19 +67,30 @@ The Plain Lamp is an undescribed and unlit thing in the Office.
 The Lightbulb is an undescribed and unlit thing in the Storage Room. 
 
 
+The lever is an undescribed thing in the Power Room. It is fixed in place. The lever can be pulled. It is not pulled. 
+
 Activating is an action applying to one thing. 
 Understand "activate [something]" as activating. 
 After activating lever:
 	say "Good job!";
-	now the Neon Strip is lit.
-	now Plain Lamp is lit. 
+	now the Neon Strip is lit;
+	now Plain Lamp is lit;
 	now the Lightbulb is lit. 
 	
+The cheatcodes are an undescribed thing in the Storage Room. The cheatcodes unlock the arcade machine. 
+
+The arcade machine is an undescribed container in the Lobby. It is locked and lockable. 
 
 
-The lever is an undescribed thing in the Power Room. It is fixed in place. The lever can be pulled. It is not pulled. 
+Playing is an action applying to one thing. 
+Understand "play [something]" as playing. 
+After playing arcade machine:
+	say "You lose instantly."
 
-
+Playing with is an action applying to two things. 
+Understand "play [something] with [something]" as playing with. 
+After playing with cheatcodes:
+	say "Good job!"
 
 
 [Above are the things]
