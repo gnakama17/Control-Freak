@@ -16,7 +16,13 @@ Lobby is a dark room. The description is ""
 
 Office is a dark room. It is east of the Lobby. The description is "" 
 
-Power Room is a room. It is south of the Office. The description is "" 
+Closet is a door. It is east of the Office and west of Storage Room. It is locked and lockable. 
+
+Private Study is a dark room. It is south of the Office. 
+
+Game Library is a dark room. It is east of the Private Study. 
+
+Power Room is a room. It is east of the Storage Room. The description is "" 
 
 Hidden Laboratory is a room. It is south of the Steel Door. The description is "" 
 
@@ -28,7 +34,7 @@ Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. It 
 
 Steel Door is a door. It is south of the Power Room and north of the Hidden Laboratory. It is locked and lockable. 
 
-The Storage Room is a dark room. It is east of the Office. The description is ""
+The Storage Room is a dark room. It is north of Game Library. The description is ""
 
 [Above are the rooms]
 
@@ -66,13 +72,19 @@ The Plain Lamp is an undescribed and unlit thing in the Office.
 
 The Lightbulb is an undescribed and unlit thing in the Storage Room. 
 
+The Tall Lamp is an undescribed and unlit thing in the Private Study. 
+
+The Ceiling Light is an undescribed and unlit thing in the Game Library. 
+
 
 The lever is an undescribed thing in the Power Room. The lever can be pulled. It is not pulled. 
 After pulling lever:
 	say "Good job!";
 	now the Neon Strip is lit;
 	now Plain Lamp is lit;
-	now the Lightbulb is lit. 
+	now the Lightbulb is lit;
+	now the Tall Lamp is lit;
+	now the Ceiling Light is lit. 
 	
 
 
