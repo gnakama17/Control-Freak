@@ -13025,7 +13025,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((action ==##Give) &&  (actor==player) && ((noun == I153_coin) && (true)) && ((second == I158_banished_one) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_807, 807);
-    ! [2: end the story finally saying ~You win~]
+    ! [2: end the story finally saying ~You were a fool to trust me.~]
     deadflag=TX_L_90; story_complete=true;
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_807, 807, 'action');
@@ -49795,7 +49795,7 @@ Constant TX_PS_65 = "This is where the body was found. The scene of the crime.";
 Constant TX_PS_89 = "UNDO the last command";
 Constant TX_PS_63 = "Universal cheat codes, from the developer themself. They could be applied to any machine here.";
 Constant TX_PS_37 = "You used it to get in to the arcade. You don't think it will have any further use, but you should keep it close just in case.";
-Constant TX_PS_90 = "You win";
+Constant TX_PS_90 = "You were a fool to trust me.";
 Array TX_L_90 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_90;
 Constant TX_PS_33 = "Yourself";
 Constant TX_PS_9 = "animals";

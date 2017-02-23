@@ -165,7 +165,32 @@ Instead of talking to The Banished One:
 		say "Hand it over."
 		
 Instead of giving the coin to The Banished One:
-	end the story finally saying "You win"
+	end the story finally saying "You were a fool to trust me."
+	
+
+
+
+[HOW TO WIN THE GAME IN THE SHORTEST AMOUNT OF TURNS:
+	east
+	south
+	east
+	north
+	east
+	pull lever 
+	west
+	x shelves (optional)
+	take cheat codes
+	west
+	play with cheat codes
+	south
+	unlock Pizzeria door with key
+	south
+	talk to The Banished One
+	yes
+	give coin
+	GAME OVER]
+	
+
 
 
 
