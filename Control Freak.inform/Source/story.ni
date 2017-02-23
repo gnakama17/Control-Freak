@@ -30,10 +30,6 @@ Pizzeria is a room. It is south of the Pizzeria Door. The description is ""
 
 The Main Arcade is west of the Pizzaeria. The description is "" 
 
-Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. It is locked and lockable. 
-
-Steel Door is a door. It is south of the Power Room and north of the Hidden Laboratory. It is locked and lockable. 
-
 The Storage Room is a dark room. It is north of Game Library. The description is ""
 
 [Above are the rooms]
@@ -108,8 +104,6 @@ After playing with cheat codes:
 	move the coin to player. 
 
 
-
-
 [Above are the things]
 
 [The lever is a thing in the Power Room. It is fixed in place. A lever can be activated. The lever is not activated.
@@ -147,10 +141,26 @@ The Front Desk is scenery in the Lobby. The description is ""
 
 [Below are doors]
 
+Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. It is locked and lockable. It is unlocked by the arcade front door key. 
 
+Steel Door is a door. It is south of the Power Room and north of the Hidden Laboratory. It is locked and lockable. 
 
 [Above are doors]
 
+
+
+The Banished One is a man in the Main Arcade. 
+
+Talking to is an action applying to one thing.
+Understand "talk to [someone]" as talking to.
+
+Instead of talking to The Banished One:
+	say "Do you have the coin?";
+	if player consents:
+		say "Hand it over."
+		
+Instead of giving the coin to The Banished One:
+	end the story finally saying "You win"
 
 
 
