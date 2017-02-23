@@ -12,25 +12,26 @@ Rule for deciding whether all includes something: it does not.
 
 [Below are the rooms]
 
-Lobby is a dark room. The description is ""
+Lobby is a dark room. The description is "The front lobby where people would buy tickets into the Pizzeria."
 
-Office is a dark room. It is east of the Lobby. The description is "" 
+Office is a dark room. It is east of the Lobby. The description is "Multiple people must've worked in here." 
 
 Closet is a door. It is east of the Office and west of Storage Room. It is locked and lockable. 
 
-Private Study is a dark room. It is south of the Office. 
+Private Study is a dark room. It is south of the Office. The description is "This is where the body was found. The scene of the crime." 
 
 Game Library is a dark room. It is east of the Private Study. 
 
-Power Room is a room. It is east of the Storage Room. The description is "" 
+Power Room is a room. It is east of the Storage Room. The description is "There's something on the wall here, a lever." 
 
-Hidden Laboratory is a room. It is south of the Steel Door. The description is "" 
+Hidden Laboratory is a room. It is east of the Steel Door. The description is "" 
 
 Pizzeria is a room. It is south of the Pizzeria Door. The description is ""
 
-The Main Arcade is west of the Pizzaeria. The description is "" 
+The Storage Room is a dark room. It is north of Game Library. The description is "It's super dusty, and shelves line the walls."
 
-The Storage Room is a dark room. It is north of Game Library. The description is ""
+Arcade Test Room is a dark room. It is east of the Game Library and south of the Power Room. 
+The description is "It is a room full of broken arcade machines."
 
 [Above are the rooms]
 
@@ -72,6 +73,8 @@ The Tall Lamp is an undescribed and unlit thing in the Private Study.
 
 The Ceiling Light is an undescribed and unlit thing in the Game Library. 
 
+The Screen is an undescribed and unlit thing in the Arcade Test Room. 
+
 
 The lever is an undescribed thing in the Power Room. The lever can be pulled. It is not pulled. 
 After pulling lever:
@@ -80,15 +83,17 @@ After pulling lever:
 	now Plain Lamp is lit;
 	now the Lightbulb is lit;
 	now the Tall Lamp is lit;
-	now the Ceiling Light is lit. 
+	now the Ceiling Light is lit;
+	now the Screen is lit. 
 	
 
+The shelves are an undescribed thing in the Storage Room. The description is "There's something on here, a piece of paper labeled 'cheat codes'." 
 
-The cheat codes are an undescribed thing in the Storage Room. 
+The cheat codes are on top of the shelves. The description is "Universal cheat codes, from the developer themself. They could be applied to any machine here." 
 
-The arcade machine is a thing in the Lobby. 
+The arcade machine is a thing in the Lobby. "An acient piece of technology. It still works, but you've never played one of these before." 
 
-The coin is a thing in the Lobby.  The coin is undescribed.  
+The coin is a thing in the Lobby.  The coin is undescribed. "A golden coin, slightly bigger than a quater with a smoother than silk texture." 
 
 
 Playing is an action applying to one thing. 
@@ -143,13 +148,13 @@ The Front Desk is scenery in the Lobby. The description is ""
 
 Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. It is locked and lockable. It is unlocked by the arcade front door key. 
 
-Steel Door is a door. It is south of the Power Room and north of the Hidden Laboratory. It is locked and lockable. 
+Steel Door is a door. It is east of the Power Room and west of the Hidden Laboratory. It is locked and lockable. 
 
 [Above are doors]
 
 
 
-The Banished One is a man in the Main Arcade. 
+The Banished One is a man in the Pizzeria. 
 
 Talking to is an action applying to one thing.
 Understand "talk to [someone]" as talking to.
