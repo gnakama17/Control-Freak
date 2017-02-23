@@ -11206,7 +11206,7 @@ Object -> I143_neon_strip ""
 Object -> I152_arcade_machine ""
     class K2_thing
     with short_name BC_195
-    with initial BC_196
+    with description BC_196
     with vector 0
     has mark_as_thing
     with IK2_Count 19
@@ -11214,7 +11214,7 @@ Object -> I152_arcade_machine ""
     with KD_Count 2
     with name 'arcade' 'machine' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_197
+    with initial BC_197
     with list_together BC_198
     with plural BC_199
     with article BC_200
@@ -11223,7 +11223,7 @@ Object -> I152_arcade_machine ""
 Object -> I153_coin ""
     class K2_thing
     with short_name BC_201
-    with initial BC_202
+    with description BC_202
     has concealed
     with vector 0
     has mark_as_thing
@@ -11232,7 +11232,7 @@ Object -> I153_coin ""
     with KD_Count 2
     with name 'coin' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_203
+    with initial BC_203
     with list_together BC_204
     with plural BC_205
     with article BC_206
@@ -11645,6 +11645,7 @@ Object I134_pizzeria ""
 Object -> I158_banished_one ""
     class K10_man
     with short_name BC_320
+    with description BC_321
     with vector 0
     has mark_as_thing
     with IK2_Count 25
@@ -11656,7 +11657,6 @@ Object -> I158_banished_one ""
     with KD_Count 10
     with name 'banished' 'one' 'men//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_321
     with initial BC_322
     with list_together BC_323
     with plural BC_324
@@ -11666,6 +11666,7 @@ Object -> I158_banished_one ""
 Object I135_pizzeria_door ""
     class K4_door
     with short_name BC_326
+    with description BC_327
     with with_key I138_arcade_front_door_key
     has lockable
     has locked
@@ -11691,7 +11692,6 @@ Object I135_pizzeria_door ""
     with KD_Count 4
     with name 'pizzeria' 'door' 'doors//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_327
     with initial BC_328
     with list_together BC_329
     with plural BC_330
@@ -13026,7 +13026,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_807, 807);
     ! [2: end the story finally saying ~You win~]
-    deadflag=TX_L_87; story_complete=true;
+    deadflag=TX_L_90; story_complete=true;
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_807, 807, 'action');
     rfalse;
@@ -13125,9 +13125,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((action ==##A77_playing) &&  (actor==player) && ((noun == I152_arcade_machine) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_804, 804);
-    ! [2: say ~You lose instantly.~]
-    say__p=1;! [3: ~You lose instantly.~]
-    ParaContent(); print "You lose instantly."; new_line; .L_Say9; .L_SayX9;RulebookSucceeds(); rtrue;
+    ! [2: say ~You lose instantly. If only you had something to help...~]
+    say__p=1;! [3: ~You lose instantly. If only you had something to help...~]
+    ParaContent(); print "You lose instantly. If only you had something to help..."; new_line; .L_Say9; .L_SayX9;RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_804, 804, 'action');
     rfalse;
 ];
@@ -13137,9 +13137,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((action ==##A78_playing_with) &&  (actor==player) && ((noun == I151_cheat_codes) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_805, 805);
-    ! [2: say ~You win!~]
-    say__p=1;! [3: ~You win!~]
-    ParaContent(); print "You win!"; new_line; .L_Say10; .L_SayX10;! [4: move the coin to player]
+    ! [2: say ~You win! Youve earned one player token coin!~]
+    say__p=1;! [3: ~You win! Youve earned one player token coin!~]
+    ParaContent(); print "You win! Youve earned one player token coin!"; new_line; .L_Say10; .L_SayX10;! [4: move the coin to player]
     MoveObject(I153_coin, player, 0, false);
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_805, 805, 'action');
@@ -49743,57 +49743,60 @@ Verb 'talk'
 
 
 
-Constant TX_PS_80 = ">";
+Constant TX_PS_83 = ">";
 Constant TX_PS_48 = "A golden coin, slightly bigger than a quater with a smoother than silk texture.";
+Constant TX_PS_77 = "A hologram of a man with no features but his form. He is standing tall and upright, motionless.";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_46 = "An acient piece of technology. It still works, but you've never played one of these before.";
-Constant TX_PS_77 = "Arcade Test Room";
+Constant TX_PS_80 = "Arcade Test Room";
 Constant TX_PS_32 = "As good-looking as ever.";
-Constant TX_PS_75 = "Banished One";
+Constant TX_PS_76 = "Banished One";
 Constant TX_PS_50 = "Cash Register";
 Constant TX_PS_68 = "Ceiling Light";
 Constant TX_PS_56 = "Closet";
 Constant TX_PS_2 = "Control Freak";
 Constant TX_PS_51 = "Couches";
 Constant TX_PS_52 = "Empty Pizza Box";
-Constant TX_PS_81 = "Fiction";
+Constant TX_PS_84 = "Fiction";
 Constant TX_PS_42 = "Front Desk";
 Constant TX_PS_4 = "Galen Nakama";
 Constant TX_PS_67 = "Game Library";
 Constant TX_PS_72 = "Hidden Laboratory";
-Constant TX_PS_78 = "It is a room full of broken arcade machines.";
+Constant TX_PS_81 = "It is a room full of broken arcade machines.";
 Constant TX_PS_58 = "It's super dusty, and shelves line the walls.";
 Constant TX_PS_59 = "Lightbulb";
 Constant TX_PS_38 = "Lobby";
 Constant TX_PS_54 = "Multiple people must've worked in here.";
 Constant TX_PS_44 = "Neon Strip";
 Constant TX_PS_53 = "Office";
-Constant TX_PS_76 = "Pizzeria Door";
+Constant TX_PS_78 = "Pizzeria Door";
 Constant TX_PS_74 = "Pizzeria";
 Constant TX_PS_55 = "Plain Lamp";
 Constant TX_PS_49 = "Potted Plant";
 Constant TX_PS_69 = "Power Room";
 Constant TX_PS_64 = "Private Study";
-Constant TX_PS_85 = "QUIT";
-Constant TX_PS_82 = "RESTART";
-Constant TX_PS_83 = "RESTORE a saved game";
+Constant TX_PS_88 = "QUIT";
+Constant TX_PS_85 = "RESTART";
+Constant TX_PS_86 = "RESTORE a saved game";
 Constant TX_PS_43 = "Red Lockbox";
 Constant TX_PS_40 = "Retro Computer";
-Constant TX_PS_79 = "Screen";
+Constant TX_PS_82 = "Screen";
 Constant TX_PS_73 = "Steel Door";
 Constant TX_PS_57 = "Storage Room";
 Constant TX_PS_66 = "Tall Lamp";
 Constant TX_PS_41 = "Television";
+Constant TX_PS_79 = "The door to the Pizzeria. There's a dim light coming from the other side, blinking through the tinted windows.";
 Constant TX_PS_39 = "The front lobby where people would buy tickets into the Pizzeria.";
+Constant TX_PS_75 = "The room is illuminated with a bluish white light. There's someone here.";
 Constant TX_PS_35 = "The thing that brought you to this wretched arcade.";
-Constant TX_PS_61 = "There's something on here, a piece of paper labeled ~cheat codes~.";
+Constant TX_PS_61 = "There's something on here, a piece of paper.";
 Constant TX_PS_70 = "There's something on the wall here, a lever.";
 Constant TX_PS_65 = "This is where the body was found. The scene of the crime.";
-Constant TX_PS_86 = "UNDO the last command";
+Constant TX_PS_89 = "UNDO the last command";
 Constant TX_PS_63 = "Universal cheat codes, from the developer themself. They could be applied to any machine here.";
 Constant TX_PS_37 = "You used it to get in to the arcade. You don't think it will have any further use, but you should keep it close just in case.";
-Constant TX_PS_87 = "You win";
-Array TX_L_87 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_87;
+Constant TX_PS_90 = "You win";
+Array TX_L_90 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_90;
 Constant TX_PS_33 = "Yourself";
 Constant TX_PS_9 = "animals";
 Constant TX_PS_36 = "arcade front door key";
@@ -49818,7 +49821,7 @@ Constant TX_PS_34 = "pager";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_84 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_87 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_60 = "shelves";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
@@ -57301,43 +57304,43 @@ Array BC_312 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_313 --> PACKED_TEXT_STORAGE TX_PS_10;
 Array BC_314 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_74;
-Array BC_316 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_316 --> PACKED_TEXT_STORAGE TX_PS_75;
 Array BC_317 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_318 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_319 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_320 --> PACKED_TEXT_STORAGE TX_PS_75;
-Array BC_321 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_320 --> PACKED_TEXT_STORAGE TX_PS_76;
+Array BC_321 --> PACKED_TEXT_STORAGE TX_PS_77;
 Array BC_322 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_323 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_324 --> PACKED_TEXT_STORAGE TX_PS_7;
 Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_326 --> PACKED_TEXT_STORAGE TX_PS_76;
-Array BC_327 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_326 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_327 --> PACKED_TEXT_STORAGE TX_PS_79;
 Array BC_328 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_329 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_330 --> PACKED_TEXT_STORAGE TX_PS_10;
 Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_332 --> PACKED_TEXT_STORAGE TX_PS_77;
-Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_332 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_81;
 Array BC_334 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_335 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_336 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_337 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_337 --> PACKED_TEXT_STORAGE TX_PS_82;
 Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_339 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_340 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_342 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_343 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_343 --> PACKED_TEXT_STORAGE TX_PS_83;
 Array BC_344 --> PACKED_TEXT_STORAGE TX_PS_4;
 Array BC_345 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_346 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_346 --> PACKED_TEXT_STORAGE TX_PS_84;
 Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_82;
-Array BC_349 --> PACKED_TEXT_STORAGE TX_PS_83;
-Array BC_350 --> PACKED_TEXT_STORAGE TX_PS_84;
-Array BC_351 --> PACKED_TEXT_STORAGE TX_PS_85;
-Array BC_352 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_85;
+Array BC_349 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_350 --> PACKED_TEXT_STORAGE TX_PS_87;
+Array BC_351 --> PACKED_TEXT_STORAGE TX_PS_88;
+Array BC_352 --> PACKED_TEXT_STORAGE TX_PS_89;
 
 
 

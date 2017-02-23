@@ -26,7 +26,7 @@ Power Room is a room. It is east of the Storage Room. The description is "There'
 
 Hidden Laboratory is a room. It is east of the Steel Door. The description is "" 
 
-Pizzeria is a room. It is south of the Pizzeria Door. The description is ""
+Pizzeria is a room. It is south of the Pizzeria Door. The description is "The room is illuminated with a bluish white light. There's someone here."
 
 The Storage Room is a dark room. It is north of Game Library. The description is "It's super dusty, and shelves line the walls."
 
@@ -87,25 +87,25 @@ After pulling lever:
 	now the Screen is lit. 
 	
 
-The shelves are an undescribed thing in the Storage Room. The description is "There's something on here, a piece of paper labeled 'cheat codes'." 
+The shelves are an undescribed thing in the Storage Room. The description is "There's something on here, a piece of paper."
 
 The cheat codes are on top of the shelves. The description is "Universal cheat codes, from the developer themself. They could be applied to any machine here." 
 
-The arcade machine is a thing in the Lobby. "An acient piece of technology. It still works, but you've never played one of these before." 
+The arcade machine is a thing in the Lobby. The description is "An acient piece of technology. It still works, but you've never played one of these before." 
 
-The coin is a thing in the Lobby.  The coin is undescribed. "A golden coin, slightly bigger than a quater with a smoother than silk texture." 
+The coin is a thing in the Lobby.  The coin is undescribed. The description is "A golden coin, slightly bigger than a quater with a smoother than silk texture." 
 
 
 Playing is an action applying to one thing. 
 Understand "play [something]" as playing. 
 After playing arcade machine:
-	say "You lose instantly."
+	say "You lose instantly. If only you had something to help..."
 	
 
 Playing with is an action applying to one thing. 
 Understand "play with [something]" as playing with. 
 After playing with cheat codes:
-	say "You win!";
+	say "You win! Youve earned one player token coin!";
 	move the coin to player. 
 
 
@@ -146,7 +146,7 @@ The Front Desk is scenery in the Lobby. The description is ""
 
 [Below are doors]
 
-Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. It is locked and lockable. It is unlocked by the arcade front door key. 
+Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. It is locked and lockable. It is unlocked by the arcade front door key. The description is "The door to the Pizzeria. There's a dim light coming from the other side, blinking through the tinted windows." 
 
 Steel Door is a door. It is east of the Power Room and west of the Hidden Laboratory. It is locked and lockable. 
 
@@ -154,7 +154,7 @@ Steel Door is a door. It is east of the Power Room and west of the Hidden Labora
 
 
 
-The Banished One is a man in the Pizzeria. 
+The Banished One is a man in the Pizzeria. The description is "A hologram of a man with no features but his form. He is standing tall and upright, motionless." 
 
 Talking to is an action applying to one thing.
 Understand "talk to [someone]" as talking to.

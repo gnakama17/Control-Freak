@@ -184,13 +184,283 @@ It is pitch dark, and you can't see a thing.
     <item nodeId="node-2772">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
-Power Room
-You can see a Steel Door here.
+Darkness
+It is pitch dark, and you can't see a thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2773"></child>
+            <child nodeId="node-3222"></child>
         </children>
+    </item>
+    <item nodeId="node-3222">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3223"></child>
+        </children>
+    </item>
+    <item nodeId="node-3223">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3224"></child>
+        </children>
+    </item>
+    <item nodeId="node-3224">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can't see a thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3225"></child>
+        </children>
+    </item>
+    <item nodeId="node-3225">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Power Room
+There's something on the wall here, a lever.
+
+You can see a Steel Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3226"></child>
+        </children>
+    </item>
+    <item nodeId="node-3226">
+        <command xml:space="preserve">pull lever</command>
+        <result xml:space="preserve">Good job!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3227"></child>
+        </children>
+    </item>
+    <item nodeId="node-3227">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Arcade Test Room
+It is a room full of broken arcade machines.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3228"></child>
+        </children>
+    </item>
+    <item nodeId="node-3228">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Game Library
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3229"></child>
+        </children>
+    </item>
+    <item nodeId="node-3229">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Storage Room
+It's super dusty, and shelves line the walls.
+
+You can see Closet here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3230"></child>
+        </children>
+    </item>
+    <item nodeId="node-3230">
+        <command xml:space="preserve">x shelves</command>
+        <result xml:space="preserve">There's something on here, a piece of paper labeled "cheat codes".
+
+On the shelves is a cheat codes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3231"></child>
+        </children>
+    </item>
+    <item nodeId="node-3231">
+        <command xml:space="preserve">take cheat codes</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3232"></child>
+        </children>
+    </item>
+    <item nodeId="node-3232">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Game Library
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3233"></child>
+        </children>
+    </item>
+    <item nodeId="node-3233">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Arcade Test Room
+It is a room full of broken arcade machines.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3234"></child>
+        </children>
+    </item>
+    <item nodeId="node-3234">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Game Library
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3235"></child>
+        </children>
+    </item>
+    <item nodeId="node-3235">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Private Study
+This is where the body was found. The scene of the crime.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3236"></child>
+        </children>
+    </item>
+    <item nodeId="node-3236">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Office
+Multiple people must've worked in here.
+
+You can see Closet here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3237"></child>
+        </children>
+    </item>
+    <item nodeId="node-3237">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Lobby
+The front lobby where people would buy tickets into the Pizzeria.
+
+An acient piece of technology. It still works, but you've never played one of these before.
+
+You can also see a Pizzeria Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3238"></child>
+        </children>
+    </item>
+    <item nodeId="node-3238">
+        <command xml:space="preserve">play arcade machine with cheat codes</command>
+        <result xml:space="preserve">I only understood you as far as wanting to play the arcade machine.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3239"></child>
+        </children>
+    </item>
+    <item nodeId="node-3239">
+        <command xml:space="preserve">play with cheat codes</command>
+        <result xml:space="preserve">You win!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3240"></child>
+        </children>
+    </item>
+    <item nodeId="node-3240">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a coin
+  a cheat codes
+  a pager
+  an arcade front door key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3241"></child>
+        </children>
+    </item>
+    <item nodeId="node-3241">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the Pizzeria Door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3242"></child>
+        </children>
+    </item>
+    <item nodeId="node-3242">
+        <command xml:space="preserve">unlock Pizzeria Door with key</command>
+        <result xml:space="preserve">You unlock the Pizzeria Door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3243"></child>
+        </children>
+    </item>
+    <item nodeId="node-3243">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the Pizzeria Door)
+
+Pizzeria
+You can see a Pizzeria Door and a Banished One here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3244"></child>
+        </children>
+    </item>
+    <item nodeId="node-3244">
+        <command xml:space="preserve">talk to Banished One</command>
+        <result xml:space="preserve">Do you have the coin?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3245"></child>
+        </children>
+    </item>
+    <item nodeId="node-3245">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">Hand it over.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3246"></child>
+        </children>
+    </item>
+    <item nodeId="node-3246">
+        <command xml:space="preserve">give coin</command>
+        <result xml:space="preserve">(to the Banished One)
+
+
+    *** You win ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2773">
         <command xml:space="preserve">activate lever</command>
