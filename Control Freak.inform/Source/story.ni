@@ -25,15 +25,15 @@ To say exit list:
 
 [Below are the rooms]
 
-Lobby is a dark room. The description is "The front lobby where people would buy tickets into the Pizzeria. An arcade machine sits in the corner, fully operational, next to a wall-mounted television. On top of the front desk is a Retro Computer that hasn't been used in years."
+Lobby is a dark room. The description is "The front lobby where people would buy tickets into the Pizzeria. An arcade machine sits in the corner, fully operational, next to a wall-mounted television. Couches line the back wall facing the television and an empty pizza box. On top of the front desk is a cash register, a potted plant, and a Retro Computer that hasn't been used in years."
 
-Office is a dark room. It is east of the Lobby. The description is "Multiple people must've worked in here. This entire room is a disaster, with desks turned over and shredded documents everywhere." 
+Office is a dark room. It is east of the Lobby. The description is "Multiple people must've worked in here. No one person could have made this apocalyptic clutter. This entire room is a disaster, with desks turned over and shredded documents everywhere." 
 
 Private Study is a dark room. It is south of the Office. The description is "This is where the body was found. The scene of the crime. Now it is a clean office, with a clean desk and a clean bookcase." 
 
 Game Library is a dark room. It is east of the Private Study. "This place is full of shelves lined with game guides. The workers must've spent a lot of time in here during breaks, brushing up on their pop culture and videogame knowledge of easter eggs and secrets." 
 
-Power Room is a room. It is east of the Storage Room. The description is "A red-lighted room with three walls of concrete and one giant steel door. Spooky. There's something on the wall here, a lever." 
+Power Room is a room. It is east of the Storage Room. The description is "A red-lighted room with three walls of concrete and one intimidating steel door. Spooky. There's something on the wall here, a lever. Next to that lever is a metal sign." 
 
 Hidden Laboratory is a room. It is east of the Steel Door. The description is "What is this place? This can't be apart of the arcade, could it? Why does this place exist? You can't see much in here. The power must've not reached this room excpet for one light, shone on a single steel table." 
 
@@ -52,7 +52,7 @@ The description is "It is a room full of broken arcade machines. Nothing in here
 
 [Below are the things]
 
-The pager is a thing carried by the player. The description is "The thing that brought you to this wretched arcade. It's gone offline since you entered." 
+The pager is a thing carried by the player. The description is "The thing that brought you to this wretched arcade. It's gone silent since you entered, but it displays a compass on the right hand side of its screen." 
 Instead of dropping the pager:
 	if the player is in a dark room:
 		say "That's really not a good idea at all.";
@@ -70,7 +70,7 @@ Instead of dropping the arcade front door key:
 
 
 
-The red key is an undescribed thing. It unlocks the Pizzeria Door. It is in the Red Lockbox. The description is "It is a red key attached to a key chain. Along with it is a miniature token of a pizza."
+The red key is an undescribed thing. It unlocks the Pizzeria Door. It is in the Red Lockbox. The description is "It is a red key attached to a short key chain. Along with it is a miniature token of a pizza."
 
 The steel key is an undescribed thing. It unlocks the Steel Door. It is on the clean desk.  The description is "A steel key, heavier than other keys. It would be hard to lose and hard to miss if carried by someone." 
 
@@ -102,9 +102,11 @@ The Ceiling Light is an undescribed and unlit thing in the Game Library.
 The Screen is an undescribed and unlit thing in the Arcade Test Room. 
 
 
+
+[How to make lever turn on light to all dark rooms]
 The lever is an undescribed thing in the Power Room. The lever can be pulled. It is not pulled.  The description is "A scratched chrome and iron lever, almost medieval. It is bolted onto the wall and in the up position."  
 After pulling lever:
-	say "At first, nothing happens. After another moment, the arcade shakes and the power surges on. Light is restored to the entire facility, at least enough to see. Now, you need to get into the Pizzeria.";
+	say "At first, nothing happens. After another moment, the arcade shakes and the power surges on. Light is restored to the entire facility, at least enough to see. Time to explore, and get that story.";
 	now the Neon Strip is lit;
 	now Plain Lamp is lit;
 	now the Lightbulb is lit;
@@ -155,15 +157,13 @@ A silver flash drive glitters in the beam of light shining down on the table."
 
 The silver flashdrive is an undescribed thing on the steel table. The description is "A silver flashdrive that is disguised as a silver coin. To the untrained eye, it could pass as one of the arcade tokens." 
 
-The clean desk is an undescribed supporter in the Private Study. It is fixed in place. The description is "A clean desk with a stack of manilla folders. There's nothing else."
+The clean desk is an undescribed supporter in the Private Study. It is fixed in place. The description is "A clean desk with a stack of manilla folders. The wood furnishing is impeccable and spotless."
 
 The folders are an undescribed thing on the clean desk. They are fixed in place. The description is "Stacks of folders holding official documents for the arcade, regarding employees that need to be let go and threats of strikes based on low pay. An envelope is in here." 
 
 The envelope is an undescribed thing on the clean desk. It is fixed in place. The description is "It holds a steel key and a wrinkled note."
 
 The wrinkled note is an undescribed thing on the clean desk. The description is "''You know what to do. It will work, trust me.'" 
-
-
 
 
 
@@ -184,6 +184,11 @@ After playing with cheat codes:
 
 [Above are the things]
 
+
+
+
+[This is code that did not work to turn on the power. To fix this, I made all rooms dark and added unlit light soruces to them.]
+
 [The lever is a thing in the Power Room. It is fixed in place. A lever can be activated. The lever is not activated.
 
 If the player is carrying the key:
@@ -202,15 +207,19 @@ Instead of pushing lever:
 
 Potted Plant is scenery in the Lobby. "A good ol' fashioned fake potted plant." 
 
-Cash Register is scenery in the Lobby. "It's empty. Damn." 
+Cash Register is scenery in the Lobby. "It's empty. Damn. Everything was taken out." 
 
-Couches are scenery in the Lobby. The description is "Some soft couches. Now is not the time for relaxing, however." 
+Couches are scenery in the Lobby. The description is "Some soft couches. Comfortable, but no time to rest." 
 
-Empty Pizza Box is scenery in the Lobby. The description is "Ew, gross." 
+Empty Pizza Box is scenery in the Lobby. The description is "Ew, gross. This holds nothing of importance. Well, at least, not anymore. Seeing this makes you hungry, but there will be time to eat later." 
 
 The Front Desk is scenery in the Lobby. The description is "A plain front desk."
 
-The clean bookcase is scenery in the Private Study. The description is "A boring but clean bookcase. Now is not the time to read, however." 
+The clean bookcase is scenery in the Private Study. The description is "A boring but clean bookcase. Full of books, boring books, read by a most likely boring man, on a boring day of work. How boring." 
+
+The books are scenery in the Private Study. The description is "Boring. Empty. Fake, in fact. Upon closer inspection, most of these books are just fakes. Interesting." 
+
+The metal sign is scenery in the Power Room. The description is "To activate power, pull lever."
 
 [Above is scenery]
 
@@ -225,7 +234,7 @@ Pizzeria Door is a door. It is south of the Lobby and north of the Pizzeria. It 
 
 Steel Door is a door. It is east of the Power Room and west of the Hidden Laboratory. It is locked and lockable. The description is "Steel, heavy metal, for restricting access and locking away something for good. Why? What's in this arcade?" 
 
-Closet is a door. It is east of the Office and west of Storage Room. It is locked and lockable. "How about that. A shortcut. No clothes though, what a wasted opportunity for saving space."
+Closet is a door. It is east of the Office and west of Storage Room. It is locked and lockable. The description is "How about that. It is actually hollow on the other side. No clothes though, what a wasted opportunity for saving space."
 
 
 [Above are doors]
@@ -234,8 +243,10 @@ Closet is a door. It is east of the Office and west of Storage Room. It is locke
 
 
 
+The description of the player is "A young and handsome reporter. That's who you used to be. Now you're a young and disheveled reporter. Do what you do best: get that story."  
 
-The Banished One is a man in the Pizzeria. The description is "A hologram of a man with no features but his form. He is standing tall and upright, motionless." 
+
+The Banished One is a man in the Pizzeria. The description is "A hologram of a man with no features but his form. He is standing tall and upright, motionless. Could this.. could this be him? The owner...? Where has he been all these years? How did he end up in there?" 
 
 
 Talking to is an action applying to one thing.
@@ -248,19 +259,25 @@ Instead of talking to The Banished One:
 		
 Instead of giving the coin to The Banished One:
 	end the story finally saying "As you pass on the shiny gold coin to The Banished One, everything flashes, and darkness consumes the whole room. Out of the emptiness, a malevolent laugh rises out of the void and a voice speaks.
-	 'I am free, at last.'"
+	 'I am free, at last.'
+	
+	TRUE ENDING"
 	
 	
 Instead of giving the silver flashdrive to The Banished One: 
 	end the story finally saying "As you pass on the silver flashdrive disguised as a silver coin, The Banished One screams out in terror. His visage shifts to that of a distorted figure, and a malevolent voice speaks.
 	'I almost had you there...so close!' With a flash, the figure vanishes, and another voice, this time much calmer and undistorted, calls out to you.
-	'Thank you.'"
+	'Thank you.'
+	
+	GOOD ENDING"
 
 Instead of giving the black flashdrive to The Banished One: 
 	end the story finally saying "As you pass on the black flashdrive to The Banished One, he smiles and glares at the device. He stands still, and his figure begins to distort. A malevolent voice launches out throughout the whole arcade.
 	'You thought you could fool me? Well, let's see how you like the cold and unforgiving reaches of cyberspace!' 
 	Before you can even open your mouth to scream, darkness swallows you whole. 
-	'I will be free.'" 
+	'I will be free.'
+	
+	BAD ENDING" 
 
 
 [HOW TO WIN THE GAME IN THE SHORTEST AMOUNT OF TURNS:
@@ -287,9 +304,7 @@ Instead of giving the black flashdrive to The Banished One:
 	yes
 	give coin
 	GAME OVER
-	THIS IS ENDING #1]
-	
-
+	THIS IS ENDING #1, THE QUICKEST ENDING]
 
 
 
