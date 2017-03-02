@@ -43,7 +43,7 @@ Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
 Release 1;
-Serial "170227";
+Serial "170301";
 
 Default Story 0;
 Default Headline 0;
@@ -11170,6 +11170,10 @@ Object -> -> I140_red_lockbox ""
     with with_key I165_black_key
     has static
     has ~transparent
+    has ~open
+    has openable
+    has lockable
+    has locked
     with vector 0
     has mark_as_thing
     with IK2_Count 7

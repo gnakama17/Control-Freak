@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/gnakama17/Desktop/Senior Year/CompSci/Control-Freak/Control Freak.inform/Build/StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/gnakama17/Desktop/Control-Freak/Control Freak.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/Users/gnakama17/Desktop/Senior Year/CompSci/Control-Freak/Control Freak.inform"
-release to "/Users/gnakama17/Desktop/Senior Year/CompSci/Control-Freak/Control Freak.materials/Release"
+project folder "/Users/gnakama17/Desktop/Control-Freak/Control Freak.inform"
+release to "/Users/gnakama17/Desktop/Control-Freak/Control Freak.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Control Freak.gblorb"
-storyfile "/Users/gnakama17/Desktop/Senior Year/CompSci/Control-Freak/Control Freak.inform/Build/output.ulx" include
-ifiction "/Users/gnakama17/Desktop/Senior Year/CompSci/Control-Freak/Control Freak.inform/Metadata.iFiction" include
+storyfile "/Users/gnakama17/Desktop/Control-Freak/Control Freak.inform/Build/output.ulx" include
+ifiction "/Users/gnakama17/Desktop/Control-Freak/Control Freak.inform/Metadata.iFiction" include
 cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 

@@ -87,7 +87,7 @@ The Retro Computer is an undescribed thing in the Lobby. It is fixed in place. T
 
 The Television is an undescribed thing in the Lobby. It is fixed in place. The description is "A television that hangs on one of the walls. It is off and unoperational."
 
-The Red Lockbox is an opaque container. It is on top of the Front Desk. It is fixed in place. The description is "A small red lockbox. It appears almost just like one of those extravagant wedding ring boxes. Maybe it used to be one. Now it serves a different purpose." 
+The Red Lockbox is an opaque container. It is locked and lockable. It is on top of the Front Desk. It is fixed in place. The description is "A small red lockbox. It appears almost just like one of those extravagant wedding ring boxes. Maybe it used to be one. Now it serves a different purpose." 
 
 The Neon Strip is an undescribed and unlit thing in the Lobby. 
 
